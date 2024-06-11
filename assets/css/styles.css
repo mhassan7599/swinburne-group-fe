@@ -1,0 +1,705 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --primary-color: #264d99;
+  --secondary-color: #26a2dc;
+  --white-color: #fff;
+  --black-color: #000;
+  --dark-black-color: #464646;
+  --light-blue-color: #f9fafb;
+  --footer-color: #2d2d2d;
+  --border-color: #848484;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.group-button a,
+.navbar-button,
+.group-button button {
+  display: inline-block;
+  padding: 12px 25px !important;
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.group-button a:hover,
+.navbar-button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+/* header */
+.header-wrapper {
+  z-index: 999;
+}
+
+.header-wrapper .desktop-header-menu ul {
+  gap: 35px;
+}
+
+.header-wrapper .mobile-header-menu {
+  padding-bottom: 25px;
+}
+
+.header-wrapper .desktop-header-menu ul li a.active,
+.header-wrapper .mobile-header-menu ul li a.active {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.header-wrapper .mobile-header-menu ul li {
+  border-bottom: 1px solid #b4b1b1;
+  padding: 5px 0px;
+}
+
+.header-wrapper .desktop-header-menu ul li a,
+.header-wrapper .mobile-header-menu ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--dark-black-color);
+}
+
+.header-wrapper .desktop-header-menu ul li a:hover,
+.header-wrapper .mobile-header-menu ul li a:hover {
+  color: var(--primary-color);
+}
+
+.header-wrapper .navbar-button {
+  background-color: var(--primary-color);
+  padding: 10px 30px !important;
+  color: var(--white-color) !important;
+}
+
+.header-wrapper .navbar-button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+/* hero */
+.m-sec-hero .m-hero-main {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: initial;
+}
+
+.m-sec-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.m-hero-main .vimeo-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.m-hero-main .vimeo-wrapper .video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.m-hero-main .vimeo-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.m-sec-hero .content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.m-sec-hero .content .hero-heading h2 {
+  font-size: 36px;
+  line-height: 35px;
+  font-weight: 700;
+}
+
+.m-sec-hero .content .hero-heading,
+.m-sec-hero .content .questions {
+  padding-bottom: 30px;
+}
+
+.m-sec-hero .content .questions h2 {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.m-hero-scroll {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+
+.scroll-button {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.scroll-button:hover {
+  color: #ccc;
+}
+
+/* company intro */
+.company-intro {
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(38, 77, 153, 1) 35%, rgba(38, 162, 220, 1) 100%);
+  padding: 120px 0px;
+  width: 100%;
+}
+
+.company-intro .content {
+  text-align: center;
+}
+
+.company-intro .content p {
+  font-size: 24px;
+  color: var(--white-color);
+}
+
+.company-intro .content .intro-list {
+  padding-top: 30px;
+}
+
+.company-intro .content .intro-list h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+.company-intro .content .intro-list p {
+  font-size: 22px;
+  line-height: 35px;
+  margin: 0;
+}
+
+.company-intro .content .description p {
+  font-size: 24px;
+  padding-top: 30px;
+}
+
+.company-intro .content .description p span {
+  font-size: 16px;
+}
+
+.company-intro .content .heading h2 {
+  font-size: 24px;
+  padding-top: 30px;
+  font-weight: 700;
+  color: var(--white-color);
+  line-height: 30px;
+}
+
+.company-intro .content h4 {
+  font-size: 24px;
+  padding-top: 30px;
+  font-weight: 700;
+  color: var(--white-color);
+}
+
+/* pages banner */
+.hero-banner {
+  background-image: url("../images/image00002.jpeg");
+  width: 100%;
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-banner .overlay {
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(38, 77, 153, 1) 35%, rgba(38, 162, 220, 1) 100%);
+  height: 350px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.hero-banner .heading h2 {
+  color: var(--white-color);
+  font-size: 50px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.hero-banner .heading p {
+  color: var(--white-color);
+  font-size: 16px;
+  padding-bottom: 40px;
+}
+
+.hero-banner .heading {
+  border-bottom: 3px solid var(--border-color);
+}
+
+.hero-banner .breadcrumb {
+  padding-top: 20px;
+}
+
+.hero-banner .breadcrumb h4,
+.hero-banner .breadcrumb h4 a {
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--font-family-poppins);
+  margin: 0;
+}
+
+.hero-banner .breadcrumb .breadcrumb-border {
+  width: 1px;
+  height: 18px;
+  background-color: var(--border-color);
+}
+
+/* about page */
+.about-wrapper,
+.services-wrapper,
+.pricing-wrapper,
+.engagement-wrapper,
+.contact-wrapper {
+  margin: 120px 0;
+}
+
+.about-wrapper .who-we-are-content,
+.who-we-are-section-wrap .who-we-content {
+  padding-bottom: 20px;
+}
+
+.heading h2 {
+  font-size: 24px;
+  color: var(--primary-color);
+  line-height: 24px;
+  font-weight: 700;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.description p {
+  font-size: 16px;
+  color: var(--dark-black-color);
+  line-height: 24px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.inner-list ul {
+  margin: 0 0 15px 0;
+  padding-left: 1rem;
+}
+
+.inner-list ul li {
+  font-size: 16px;
+  color: var(--dark-black-color);
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+
+/* services page */
+.who-we-are-section-wrap {
+  margin-top: 100px;
+}
+.services-wrapper .services-content .inner-content {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 30px;
+  border-radius: 30px;
+  min-height: 250px;
+  height: 100%;
+}
+
+.services-content .inner-content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.services-content .inner-content p {
+  font-size: 16px;
+  color: var(--dark-black-color);
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.who-we-are-section-wrap .who-we-list h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 30px;
+  display: inline-block;
+}
+
+.who-we-are-section-wrap .who-we-list h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark-black-color);
+  line-height: 30px;
+  display: inline-block;
+  margin: 0;
+}
+
+.who-we-are-section-wrap .who-we-list ul li {
+  margin-top: 30px;
+}
+
+.renewal-services,
+.lease-negatiation {
+  margin-top: 80px;
+}
+
+.renewal-services .renewal-list .renewal-inner-list h5,
+.lease-negotiation-list .lease-inner-maximize-list h5 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark-black-color);
+  line-height: 30px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+/* pricing page */
+.pricing-wrapper .pricing-content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--dark-black-color);
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.pricing-wrapper .pricing-content .pricing-graph {
+  margin-top: 40px;
+}
+
+/* engagement page */
+.engagement-wrapper .engagement-graph {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding-top: 40px;
+}
+
+/* contact page */
+.contact-wrapper .contact-right h2 {
+  color: var(--dark-black-color);
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contact-wrapper .contact-right p {
+  color: var(--dark-black-color);
+  font-size: 16px;
+  line-height: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.contact-right .contact-form {
+  padding-top: 20px;
+}
+
+.contact-right .contact-form .fields {
+  padding-bottom: 15px;
+}
+
+.contact-right .contact-form label {
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+  padding-bottom: 8px;
+}
+
+.contact-right .contact-form input,
+.contact-right .contact-form textarea {
+  border: 1px solid #e2e8f0;
+  padding: 1em;
+  width: 98%;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.contact-right .contact-form input:focus,
+.contact-right .contact-form textarea:focus {
+  outline: 0;
+}
+
+.contact-right .contact-form .form-button button {
+  width: 100%;
+  text-align: center;
+  padding: 10px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--white-color);
+  border: none;
+}
+
+.contact-left .contact-content .heading h2,
+.contact-left .contact-heading-info h2 {
+  color: var(--dark-black-color);
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.contact-left .contact-content .heading a {
+  color: var(--dark-black-color);
+  font-size: 16px;
+}
+
+.contact-left .contact-content .heading p {
+  color: var(--dark-black-color);
+  font-size: 16px;
+  padding-bottom: 5px;
+  display: block;
+}
+
+.contact-left .contact-content .heading h2 {
+  padding-bottom: 40px;
+}
+
+.contact-left .contact-call-us {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.contact-left .contact-call-us h4 {
+  color: var(--dark-black-color);
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.group-button button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  padding: 14px 35px !important;
+}
+
+.group-button button:hover {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+/* footer */
+.footer-wrapper {
+  background-color: var(--footer-color);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 60px 0 20px;
+}
+
+.footer-wrapper .footer-content {
+  padding-bottom: 60px;
+  border-bottom: 1px solid #ffffff3d;
+}
+
+.footer-wrapper .footer-left .logo h1 {
+  margin: 0;
+  width: 100%;
+  line-height: 0;
+}
+
+.footer-wrapper .footer-left .logo h1 a {
+  margin-bottom: 0;
+  color: var(--white-color);
+  text-transform: uppercase;
+  line-height: 1em;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.footer-wrapper .footer-left .logo p {
+  margin-bottom: 0;
+  color: var(--white-color);
+  font-weight: 400;
+  line-height: 1em;
+  font-size: 14px;
+  font-family: var(--font-family-poppins);
+}
+
+.footer-wrapper .footer-left .paragraph {
+  color: var(--white-color);
+  font-size: 16px;
+  line-height: 1.7rem;
+  margin-bottom: 10px;
+  font-family: var(--font-family-poppins);
+  padding-top: 20px;
+}
+
+.footer-wrapper .footer-left .paragraph span,
+.footer-wrapper .footer-left .paragraph span a {
+  font-family: var(--font-family-poppins);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.footer-center h5,
+.footer-right h5 {
+  color: var(--white-color);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.footer-center .pages-list ul,
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-right ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.footer-center .pages-list ul li,
+.footer-right ul li {
+  padding-bottom: 5px;
+}
+
+.footer-center .pages-list ul li a,
+.footer-right ul li a {
+  color: var(--white-color);
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.footer-wrapper .copyright {
+  padding: 30px 0 10px 0;
+}
+
+.footer-wrapper .copyright p {
+  color: #cfcfcf;
+  transition: color 0.3s;
+  font-family: var(--font-family-poppins);
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.footer-wrapper .copyright p a {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 992px) {
+  .desktop-header-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .company-intro .content p {
+    font-size: 18px;
+  }
+
+  .company-intro .content .intro-list h2 {
+    font-size: 24px;
+  }
+
+  .company-intro .content .intro-list p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .company-intro .content .description p {
+    font-size: 18px;
+  }
+
+  .company-intro .content .heading h2,
+  .services-content .inner-content h3,
+  .pricing-wrapper .pricing-content h3 {
+    font-size: 20px;
+  }
+
+  .hero-banner .heading h2 {
+    font-size: 35px;
+  }
+
+  .services-content .inner-content p,
+  .pricing-content p {
+    font-size: 14px;
+  }
+  
+}
+
+@media screen and (max-width: 520px) {
+  .heading h2 {
+    font-size: 20px !important;
+  }
+  .description p,
+  .hero-banner .heading p,
+  .inner-list ul li,
+  .hero-banner .breadcrumb h4, .hero-banner .breadcrumb h4 a,
+  .contact-left .contact-content .heading p {
+    font-size: 14px;
+  }
+
+  .who-we-are-section-wrap .who-we-list h2,
+  .who-we-are-section-wrap .who-we-list h4,
+  .contact-wrapper .contact-right h2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .renewal-services .renewal-list .renewal-inner-list h5, 
+  .lease-negotiation-list .lease-inner-maximize-list h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .lease-inner-maximize-list ul li {
+    font-size: 14px;
+  }
+}
